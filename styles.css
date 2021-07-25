@@ -1,0 +1,111 @@
+body {
+    font-family:'Ubuntu', sans-serif;
+    background:#F1F7FC;
+}
+
+nav {
+   
+    display: inline-flex;
+    background-color: #F1F7FC;;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+nav .logo {
+
+}
+
+nav .navbar-links {   
+    padding: 5px 5px;
+}
+
+nav li {
+  
+    font-size: 18px;
+    display: inline-block;
+    justify-content: space-between;
+}
+    
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-content {
+    width: 100%;
+    position: absolute;
+    min-height: 100vh;
+    background-position: center;
+    text-align: center;
+    z-index: -1;
+    background-color: #F1F7FC;
+}
+
+.header-content h1 {
+    background-color: #f3ec78;
+    background-image: linear-gradient(to left,  #4EFFDF, #4382e0, #1850df);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 82px;
+    z-index: 1;
+    margin-top: 8%;
+}
+
+
+section .hero-image img {
+    width: 25%;
+    position: relative;
+    left: 0%;
+    top:30%;
+    z-index: 1;
+}
+
+section a.hero-btn {
+    position: relative;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 25px;
+    z-index: 5;
+    padding: 10px 42px ;
+}
+
+section a.hero-btn  {
+    text-decoration: none;
+}
+
+section .second-image img {
+    width: 20%;
+    position: relative;
+    left: 80%;   
+    top: -30vh;
+    z-index: 1;
+}
+
+ footer.footer li {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+
+
+
+.fa-linkedin::before {
+    font-size: 28px;
+}
+
+.fa-github::before {
+    font-size: 28px;
+}
+
+
+
