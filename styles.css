@@ -1,10 +1,13 @@
 body {
-    font-family:'Ubuntu', sans-serif;  
+    font-family:'Ubuntu', sans-serif; 
+    background-image: url(/images/Gradient\ background_1.png);
+    background-position: center;
+    background-size: 120%;
+    font-size: 1rem ;
 }
 
 section .header-box {
     width: 90vw;
-    height: 80vh;
     background-color: rgba(255, 255, 255, 0.4);
     background-position: center;
     border-radius: 50px;
@@ -19,55 +22,45 @@ section .logo img {
 
 .header {
     min-height: 100vh;
-   width: 100vw;
-   background-image: url(/images/Gradient\ background_1.png);
-   background-position: center;
-   background-size: cover;
+    width: 100vw;
 }
 
 nav {
     display: flex;
-    padding: 2px 4px;
+    padding: 1em 2em;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top:5px;
+    top:1%;
     margin-top: 0px;
-
+    box-sizing: border-box;
+    width: 100%;
 }
-
-/* nav img {
-    width: 150px;
-} */
 
 .nav-links {
     flex: 1;
     text-align: right;
     position: relative;
-    right:150px;
+    right:8%;
+    font-size: 1rem;
 }
-
 
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     position: relative;
-    padding: 8px 12px;
-    justify-content: space-around;
-    
+    padding: .7em 1.5em; 
+    font-weight: 400;  
 }
-
 
 .nav-links ul li:hover {
     color: rgb(0, 0, 0);
     background-color:rgba(13, 88, 209, 0.1);
-    padding: 10px 20px;
+    padding: .7em 1.5em;
     border-radius: 8px;
     transition: .2s;
-    font-size:20px ;
-
+    font-size:1rem ;
 }
-
 
 .nav-links ul li a {
     color: black;
@@ -77,17 +70,17 @@ nav {
 
 section .hero-image img {
     position: relative;
-    left:1000px;
-    width: 40%;
+    left:55%;
+    width: 45%;
     top:-20vh;
 }
 
 section .header-content h1 {
-    font-size: 80px;
+    font-size: 4rem;
     color: black;
     position: relative;
     left: 10%;
-    font-weight: 700;
+    font-weight: 800;
     top: 10vh;
 }
 
@@ -104,16 +97,16 @@ section .header-content h4 {
 
 section a.hero-btn {
     position: absolute;
-    font-size: 20px;
+    font-size: 1.3rem;
     background-color: #355acc;
     color: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 15px;
     z-index: 5;
-    padding: 16px 36px ;
+    padding: 1rem 2rem ;
     text-decoration: none;
     top: 30vh;
     left:10%;
-    margin-top: 30px;
+    margin-top: 3em;
     text-align: center;
     font-weight: 500;
 }
@@ -122,10 +115,8 @@ section a.hero-btn {
 section a.hero-btn:hover {
     box-shadow: 5px 10px 10px rgba(13, 88, 209, 0.4);
     transition: .3s;
-    font-size: 22px
-
+    font-size: 1.5rem;
 }
-
 
  footer.footer li {
     list-style: none;
@@ -135,9 +126,7 @@ section a.hero-btn:hover {
     padding: 20px;
     font-weight: 500;
     font-size: 18px;
-
 }
-
 
 .fa-linkedin::before {
     font-size: 28px;
@@ -150,21 +139,206 @@ section a.hero-btn:hover {
 
 /* --------------------***portfolio***--------------------- */
 
-.header-portfolio .portfolio-title h1 {
+
+.portfolio-title h1 {
+    
+    font-size: 3.5em;
+    font-weight:800;
+    text-align: left;
+    margin: 1em;
+    position: relative;
+    left: 40%;
+}
+
+
+.columns-card {
+  background-color:rgba(255, 255, 255, 0.6);
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-start;
+  width:100%; 
+  /* border: green solid 1px; */
+  border-radius: 40px;
+}
+
+.columns-card .col {
+    display: inline-block;
+    width: 30%;
+    margin: 1em; 
+}
+
+.columns-card .col h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: 700;
+    
+}
+
+
+.columns-card .col p {
+    margin-top: 0;
+    margin-bottom: .2;
+    color: rgb(36, 35, 35);
+     
+    font-weight:normal;
+    font-size: 1.1rem;
+}
+
+.columns-card .col a {
+    color: #355acc;;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-right: 1em;
+
+}
+
+.columns-card .col a:hover {
+    color: rgb(0, 0, 0);
+    background-color:rgba(13, 88, 209, 0.1);
+    padding: .7em 1.5em;
+    border-radius: 8px;
+    transition: .2s;
+    font-size:1rem ;
+
+}
+
+
+.columns-card .col .card-link {
+    margin-top: 1.5em;
+}
+
+.columns-card img.image-card  {
+    width:100%;
+
+}
+
+
+.columns-card .col iframe {
+    width:100%;
+    margin-bottom: 2em;
+   
+}
+
+
+
+
+/* --------------------***about***--------------------- */
+
+
+
+.container {
+    width:100%;  
+    max-width: 980px; 
+    /* display: flex; */ 
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    width:100%; 
+}
+
+.columns .col {
+    width: 100%;
+    margin: 1em;   
+}
+
+.columns .col .image img {
+    /* margin: 1em; */
+    padding: 1em;
+    border-radius: 40px;
+    width:105%; 
+} 
+
+.container .about-title h1 {
+    font-size: 3.5em;
+    font-weight:800;
+    text-align: left;
+    margin: 2%;
+    position: relative;
+    left: 40%;
+}
+
+
+.col .text-box {
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1.5em;
+    width: 100%;
+    border-radius: 40px;
+    /* box-shadow: 2px 0px 4px rgba(158, 158, 161, 0.3); */
+}
+    
+
+.col .text-box .text-small {
+    margin: 0;
+    
+}
+
+.col .text-box p {
+    margin-top: 0;
+    margin-bottom: .2;
+    color: rgb(85, 85, 85);
+    padding-left: 1.5em; 
+    font-weight:normal;
+    font-size: 1rem;
+}
+
+.col .text-box h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.col .text-box h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .9em;
+    font-weight: 700;
+}
+
+br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: .4em; /* change this to whatever height you want it */
+}
+
+.text-box ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-left: .5rem;
+    font-size: 1.2rem;
+    color: rgb(65, 62, 62);
+    margin: .5em;
+}
+
+.text-box ul {
+    margin-left: -.2rem;
+}
+
+/* --------------------***contact***--------------------- */
+
+.header-contact {
+    min-height: 100vh;
+   width: 100vw;
+}
+
+.header-contact .contact-title h1 {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
 }
 
-
-section .cards {
-    display: flex;
+.contact-section {
+    position: relative;
+    top:-70vh;
+    width:60vw;
     justify-content: center;
-    
-}
-
-
-section .cards .card {
-    
+    background-color:  rgba(255, 255, 255, 0.4);
 
 }
+
+
