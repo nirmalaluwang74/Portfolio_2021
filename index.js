@@ -1,3 +1,39 @@
+
+
+    let showEl = document.getElementById("showMenu")
+    let hideEl = document.getElementById("hideMenu")
+    let navlinksEl = document.getElementById("nav-links")
+
+
+    // console.log(navlinksEl)
+
+    showEl.addEventListener("click", () => {
+        navlinksEl.style.right = "5%";
+    })
+
+    hideEl.addEventListener("click", () => {
+        navlinksEl.style.right = "-45%";
+    })
+
+    // -----portfolio----
+
+    let resumeShowEl = document.getElementById("resume-showMenu")
+    let resumeHideEl = document.getElementById("resume-hideMenu")
+    let resumeNavlinksEl = document.getElementById("resume-nav-links")
+
+
+    console.log(resumenavlinksEl)
+
+    resumeShowEl.addEventListener("click", () => {
+        resumeNavlinksEl.style.right = "5%";
+    })
+
+    resumeHideEl.addEventListener("click", () => {
+        resumeNavlinksEl.style.right = "-45%";
+    })
+
+
+
 function validateForm() {
     let name =  document.getElementById('name').value;
     if (name == "") {

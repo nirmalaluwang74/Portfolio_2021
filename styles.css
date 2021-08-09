@@ -90,6 +90,15 @@ nav {
     font-size: .9rem;
 }
 
+.nav-links i {
+    display: none;
+}
+
+i#showMenu {
+    display: none;
+}
+
+
 section .hero-image img {
     position: relative;
     left:55%;
@@ -174,11 +183,15 @@ section a.hero-btn:hover {
 
 @media screen and (max-width: 480px) {
 
-
+.logo {
+    position: relative;
+    left: 2%;
     
+}
+
 section .logo img {
     width: 5%;
-    margin-left:2vw;
+    margin-left:5%;
     top:1%;
 }
 
@@ -196,21 +209,31 @@ section .logo img {
     color: black; 
 }
 
+section .header-box {
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-position: center;
+    border-radius: 6%;
+    position: relative;
+    height: 60%;
+}
+
 
     section .header-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         position: relative;
-        left: 5%;
+        left: 2%;
+        right:2%;
         font-weight: 600;
-        top: 6vh; 
+        top: 24vh; 
     }
     
     section .header-content h4 {
         font-size:.7rem;
         font-weight: 400;
         margin: .3em .1em;
-        top: 8vh;
-
+        top: 24.5vh;
+        left: 15%;
     }
 
     nav {
@@ -226,12 +249,20 @@ section .logo img {
     }
     
     .nav-links {
-    
         text-align: right;
-        position: relative;
+        position: absolute;
         right:1%;  
+        background: rgba(255, 255, 255);
+        height:24vh;
+        width:35%;
+        border-radius: 7px;
+        top:45%;
+        right:5%;
+        text-align: left;
+        z-index: 6;
+        margin: 5%;
     }
-    
+
     .nav-links ul li {
         list-style: none;
         display: flex;
@@ -241,6 +272,8 @@ section .logo img {
         font-size: .7rem ;
         font-family:'Ubuntu', sans-serif; 
     }
+
+
     
     .nav-links ul li:hover {
         color: rgb(0, 0, 0);
@@ -255,28 +288,50 @@ section .logo img {
         color: black;
         text-decoration: none;
         font-size: .9rem;
+        
+    }
+
+    .nav-links i {
+        display: block;
+        color: black;
+        font-size: 1rem; 
+        cursor:pointer;    
     }
     
+    i#showMenu.fas.fa-bars {
+        display: block;
+        position: relative;
+        right: 1%;
+        z-index: 9;
+        padding: .5em !important;
+        margin: 1em !important;
+    }
+
+    i#hideMenu.far.fa-times-circle {
+        position: relative;
+        right: 4%;
+        z-index: 8;
+        padding: .5em !important;
+        margin: .5em !important;
+    }
+
     section .hero-image img {
         position: relative;
-        left:10%;
-        right: 10%;
-        width: 90%;
-        top:25vh;
+        left:6%;
+        right: 6%;
+        width: 88%;
+        top:35vh;
     }
     
     section a.hero-btn {
-        position: absolute;
         font-size: .8rem;
-        background-color: #355acc;
         color: rgb(255, 255, 255);
         border-radius: 7px;
-        z-index: 5;
-        padding: .5em 1em ;
-        text-decoration: none;
-        top: 16vh;
-        left:5%;
-        margin-top: 3em;
+        padding: .6em 1em ;
+        top: 36vh;
+        left:35%;
+        right:35%;
+        margin-top: 1em;
         text-align: center;
         font-weight: 500;
         font-family:'Ubuntu', sans-serif; 
@@ -300,8 +355,6 @@ section .logo img {
     }
     
 }
-
-
 
 
 /* --------------------***portfolio***--------------------- */
