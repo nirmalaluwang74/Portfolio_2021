@@ -1,13 +1,13 @@
 
+   // -----index homepage----//
 
     let showEl = document.getElementById("showMenu")
     let hideEl = document.getElementById("hideMenu")
     let navlinksEl = document.getElementById("nav-links")
 
 
-    // console.log(navlinksEl)
-
     showEl.addEventListener("click", () => {
+        navlinksEl.style.display= "block";
         navlinksEl.style.right = "5%";
     })
 
@@ -15,22 +15,30 @@
         navlinksEl.style.right = "-45%";
     })
 
-    // -----portfolio----
-
-    let resumeShowEl = document.getElementById("resume-showMenu")
-    let resumeHideEl = document.getElementById("resume-hideMenu")
-    let resumeNavlinksEl = document.getElementById("resume-nav-links")
+     // -----index homepage----//
 
 
-    console.log(resumenavlinksEl)
+    // -----resume----//
+    
+   
+ 
+    // -----resume----//
 
-    resumeShowEl.addEventListener("click", () => {
-        resumeNavlinksEl.style.right = "5%";
-    })
 
-    resumeHideEl.addEventListener("click", () => {
-        resumeNavlinksEl.style.right = "-45%";
-    })
+
+
+     // -----portfolio----//
+
+    
+      // -----portfolio----//
+
+
+
+      
+      // -----contact----//
+
+    
+   
 
 
 
@@ -63,3 +71,5 @@ function validateForm() {
     }
     document.querySelector('.status').innerHTML = "Sending...";
   }
+
+  // -----contact----//

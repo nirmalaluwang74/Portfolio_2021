@@ -17,26 +17,25 @@
     
 <body>
     <section>
-        <nav>
+        <nav class="contact-nav">
             <div class="logo">
 				<a href="index.html"><img src="images/Logo_n.png" alt=""><strong> &#160 nirmala </strong>luwang</a>
 			</div>
-			<div class="nav-links">
+			<div class="nav-links" id="contact-nav-links">
+                <i class="far fa-times-circle" id="contact-hideMenu"></i>
 				<ul>
 					<li><a href="index.html">home</a></li>
-					<li><a href="resume.html">about</a></li>
+					<li><a href="resume.html">my cv</a></li>
 					<li><a href="portfolio.html">portfolio</a></li>
 					<li><a href="contact.html">contact</a></li>
 				</ul>
 			</div>
+            <i class="fas fa-bars" id="contact-showMenu"></i>
         </nav>
     </section>
 
-    <div class="container">
-        <div class="contact-title">
-            <h1>Contact me</h1>
-        </div>
-
+    <div class="container">   
+        <h1 class="contact-title">Contact me</h1>
             <!-- Section: Contact v.3 -->
         <div class="contact-section my-5">
 
@@ -119,9 +118,7 @@
         
                     </div>
                     <!-- Grid row -->
-        
-                </div>
-        
+                </div>       
                 </div>
                 <!-- Grid column -->
         
@@ -210,11 +207,11 @@
                     <i class="fab fa-linkedin-in"> </i>
                     </a>
                 </li>
-                <!-- <li class="list-inline-item" style="font-size: medium;">
+                <li class="list-inline-item" style="font-size: medium;">
                     <a class="btn-floating btn-dribbble mx-1">
                     <i class="fab fa-dribbble" > </i>
                     </a>
-                </li> -->
+                </li>
                 </ul>
                 <!-- Social buttons -->
     
@@ -229,6 +226,26 @@
     
             </footer>
             <!-- Footer -->
+
+            <script>
+                let contactShowEl = document.getElementById("contact-showMenu")
+                let contactHideEl = document.getElementById("contact-hideMenu")
+                let contactNavlinksEl = document.getElementById("contact-nav-links")
+
+
+                contactShowEl.addEventListener("click", () => {
+                    contactNavlinksEl.style.display= "block";
+                    contactNavlinksEl.style.right = "5%";
+                })
+
+                contactHideEl.addEventListener("click", () => {
+                    contactNavlinksEl.style.right = "-45%";
+                })
+
+            </script>
+
+
+
             
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
