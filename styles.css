@@ -321,9 +321,9 @@ section a.hero-btn:hover {
         color: rgb(255, 255, 255);
         border-radius: 7px;
         padding: .6em 1em ;
-        top: 36vh;
+        top: 40vh;
         left:4%;
-        margin-top: 1em;
+        margin-top: 1.5em;
         text-align: center;
         font-weight: 500;
         font-family:'Ubuntu', sans-serif; 
